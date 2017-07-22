@@ -1,0 +1,66 @@
+.siteheader {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-flow: row nowrap;
+}
+#logo {
+  background-image: url("./images/bent-creek-logo.png");
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+}
+.navul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.navli {
+  display: flex;
+  align-items: center;
+}
+
+#home .main {
+  background: #F2F1E8;
+  color: #131511;
+}
+#home .products {
+  color: #FFFFFF;
+}
+#home .product1 {
+  background-image: url("./images/product-1.jpg");
+}
+#home .product2 {
+  background-image: url("./images/product-2.jpg");
+}
+#home .product3 {
+  background-image: url("./images/product-3.jpg");
+}
+#home .product4 {
+  background-image: url("./images/product-4.jpg");
+}
+#home .product5 {
+  background-image: url("./images/product-5.jpg");
+}
+#home .product6 {
+  background-image: url("./images/product-6.jpg");
+}
+#home .product7 {
+  background-image: url("./images/product-7.jpg");
+}
+#home footer {
+  margin-top: 10px;
+  color: black;
+}
+
+
+#about .midimage {
+  background-image: url(./images/background-3.jpg);
+  color: #FFFFFF;
+}
+
+#newsletter {
+  background-image: url(./images/background-2.jpg);
+}
+#newsletter .signup {
+  background-color: #FFFFFF;
+}
