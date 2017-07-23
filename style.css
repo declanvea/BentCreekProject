@@ -1,6 +1,8 @@
 /*TODO:
-navbar 1 item
-#home 3 item
+navbar 2 item
+#home 3 items
+#about 9 items
+#newsletter 5 items
 */
 
 /*--------------------Start of navbar section-----------------*/
@@ -51,7 +53,9 @@ navbar 1 item
 	color: #968772;
 }
 
-/*TODO: Still need to make "active" navbar highlight color: #968772; because it won't highlight correctly*/
+/*TODO:
+-Still need to make "active" navbar highlight color: #968772; because it won't highlight correctly
+-On #about and #newsletter the navbar slides left/right to stay center on the width of the page instead of being locked.*/
 
 
 /*-------------------Start of #home section-------------------*/
@@ -99,7 +103,8 @@ navbar 1 item
   /*justify-content: center;*/
 }
 
-/*TODO: images zoom when expanding and shrinking the page - need to make them uniform*/
+/*TODO: images zoom when expanding and shrinking the page - need to make them uniform. Is this done by "containing" image?
+*/
 
 #home .product1 {
   background-image: url("./images/product-1.jpg");
@@ -219,6 +224,13 @@ navbar 1 item
   padding-left: 200px;
   padding-right: 200px;
 }
+
+/*TODO:
+-paragraph spacing
+-page width is off
+-margin right and margin bottom have gaps that need fixing*/
+
+
 #about .body {
   /*width: 72%;*/
 }
@@ -239,6 +251,9 @@ navbar 1 item
   padding-right: 30px;
   padding-bottom: 40px;
 }
+
+/*TODO: inline link "dedicated environment" to the "Facilities" paragraph*/
+
 #about .p2 {
   font-style: italic;
   text-align: left;
@@ -260,6 +275,9 @@ navbar 1 item
   justify-content: center;
   align-items: center;
 }
+
+/*TODO: midimage does not stretch width of page*/
+
 #about .midimage h1 {
   color: #FFFFFF;
   font-size: 45px;
@@ -288,8 +306,35 @@ navbar 1 item
   padding-top: 20px;
   font-size: 10px;
 }
+
+/*TODO: caption spacing is off with image*/
+
+#about table {
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+/*TODO: table width/positioning should be aligned with paragraph above*/
+
+#about .lead {
+  border: solid .5px;
+  padding: 15px;
+  margin: 0px;
+  font-size: 80%;
+  border-color: #131511;
+}
+#about .follow {
+  border: solid .5px;
+  border-color: #131511;
+  padding: 15px;
+}
+#about .color {
+  background-color: #DFD5C6;
+}
 #about footer {
   height: 100px;
+  /*margin: 0;*/
+  /*width: 100%;*/
   color: #FFFFFF;
   background-color: #303030;
   display: flex;
@@ -298,11 +343,116 @@ navbar 1 item
   padding-left: 30px;
 }
 
+/*TODO: footer is not stretching width of entire page*/
+
 /*-------------------Start of #newsletter section-------------*/
 
-#newsletter {
-  background-image: url(./images/background-2.jpg);
-}
 #newsletter .signup {
+  background-image: url("./images/background-2.jpg");
+  height: 540px;
+  width: 1300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 45px;
+  margin-bottom: 115px;
+}
+
+/*TODO:
+-Fonts and font colors are off
+-textbox size is off
+-title headers are not right size
+-entry lines do not have underline under names
+-entry lines highlight "blue" when you click to type
+*/
+
+
+#newsletter .textbox {
   background-color: #FFFFFF;
+  height: 70%;
+  width: 47%;
+  margin-top: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+#newsletter .titles {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+#newsletter .titles h2 {
+  font-size: 20px;
+  font-weight: 200;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+#newsletter .titles h4 {
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#newsletter .entry {
+  padding: 30px;
+}
+#newsletter .names {
+  display: flex;
+  flex-flow: row wrap;
+}
+#newsletter .firstname {
+  /*border: solid 1px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  height: 15px;
+  width: 50px;*/
+  /*border-bottom: 550px;*/
+}
+#newsletter #first_name {
+  border: solid 1px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  height: 15px;
+  width: 500px;
+}
+#newsletter .email {
+  /*border: solid 1px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  height: 15px;
+  width: 50px;*/
+  /*border-bottom: 550px;*/
+}
+#newsletter #email {
+  border: solid 1px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  height: 15px;
+  width: 500px;
+}
+#newsletter .submit {
+  /*padding-left: 240px;
+  padding-right: 240px;
+  /*padding-bottom: 20px;*/
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+#newsletter #submit_button {
+  background-color: #968772;
+  color: #F2F1E8;
+  padding: 10px 15px 10px 15px;
+  border: none;
+}
+#newsletter #submit_button:hover {
+  background-color: #967343;
+  color: #F2F1E8;
+  padding: 10px 15px 10px 15px;
+  border: none;
 }
