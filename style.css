@@ -1,9 +1,9 @@
 /*TODO:
 navbar 1 item
-#home 2 item
+#home 3 item
 */
 
-/*Navbar applied to all 3 pages*/
+/*--------------------Start of navbar section-----------------*/
 
 .siteheader {
   background-color: #FFFFFF;
@@ -53,7 +53,10 @@ navbar 1 item
 
 /*TODO: Still need to make "active" navbar highlight color: #968772; because it won't highlight correctly*/
 
-#home .main {
+
+/*-------------------Start of #home section-------------------*/
+
+#home main {
   width: 100%;
   background: #F2F1E8;
   padding-top: 30px;
@@ -72,6 +75,9 @@ navbar 1 item
   font-weight: 200;
   padding-bottom: 60px;
 }
+
+/*TODO: padding/spacing between the titles and other elements is off*/
+
 #home p {
   color: #FFFFFF;
   display: flex;
@@ -202,16 +208,97 @@ navbar 1 item
   padding-left: 30px;
 }
 
+/*---------------------Start of #about section-----------------*/
 
+#about main {
+  width: 850px;
+  background: #F2F1E8;
+  padding-top: 60px;
+  color: #131511;
+  font-family: 'Merriweather', serif;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+#about .body {
+  /*width: 72%;*/
+}
+#about .title {
+  text-align: center;
+}
+#about .title h1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+#about .p1 {
+  padding-bottom: 30px;
+}
+#about .p1 img {
+  height: 120px;
+  width: 160px;
+  float: left;
+  padding-right: 30px;
+  padding-bottom: 40px;
+}
+#about .p2 {
+  font-style: italic;
+  text-align: left;
+  border-left: solid 2px;
+  font-size: 18px;
+  margin: 0 auto;
+}
+#about .p3 h2 {
+  font-size: 30px;
+  font-weight: 200;
+}
 #about .midimage {
   background-image: url(./images/background-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .midimage h1 {
   color: #FFFFFF;
+  font-size: 45px;
+  font-weight: 300;
+}
+#about .ArticleAside {
+  display: flex;
+}
+#about .p4 {
+  padding-right: 35px;
+}
+#about .p4 h2{
+  padding-top: 30px;
+  font-size: 30px;
+  font-weight: 200;
+}
+#about .p4 p {
+  font-size: 15px;
+}
+#about .aside img {
+  padding-top: 90px;
+  height: 120px;
+  width: 155px;
+}
+#about .aside p {
+  padding-top: 20px;
+  font-size: 10px;
 }
 #about footer {
-  margin-top: 10px;
+  height: 100px;
   color: #FFFFFF;
   background-color: #303030;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
 }
+
+/*-------------------Start of #newsletter section-------------*/
 
 #newsletter {
   background-image: url(./images/background-2.jpg);
