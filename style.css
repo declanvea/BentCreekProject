@@ -1,8 +1,9 @@
 /*TODO:
 navbar 2 item
-#home 3 items
-#about 9 items
-#newsletter 5 items
+#home 2 items
+#about 8 items
+#newsletter 3 items
+*BONUS implementation
 */
 
 /*--------------------Start of navbar section-----------------*/
@@ -73,11 +74,12 @@ navbar 2 item
 #home .title h1 {
   font-size: 50px;
   font-weight: 400;
+  /*padding-bottom: -60px;*/
 }
 #home .title h3 {
   font-size: 30px;
   font-weight: 200;
-  padding-bottom: 60px;
+  /*padding-bottom: 60px;*/
 }
 
 /*TODO: padding/spacing between the titles and other elements is off*/
@@ -86,9 +88,9 @@ navbar 2 item
   color: #FFFFFF;
   display: flex;
   align-items: flex-end;
-  /*background-color: #303030;*/
+  background-color: #303030;
+  padding: 10px;
 }
-/*TODO: paragraph background colors*/
 
 #home .products {
   /*margin: 10px 10px 10px 10px;
@@ -110,13 +112,16 @@ navbar 2 item
   background-image: url("./images/product-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-basis: 60%;
+  /*min-width: 60%;*/
   flex-grow: 3;
   flex-shrink: 3;
   height: 360px;
   margin-right: 15px;
   margin-top: 15px;
+  align-items: flex-end;
   /*margin-right: 5px;*/
   /*height: 370px;
   width: 730px;*/
@@ -125,6 +130,7 @@ navbar 2 item
   background-image: url("./images/product-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-basis: 18%;
   flex-grow: 1;
@@ -132,12 +138,14 @@ navbar 2 item
   height: 360px;
   margin-right: 15px;
   margin-top: 15px;
+  align-items: flex-end;
   /*margin-right: 5px;*/
 }
 #home .product3 {
   background-image: url("./images/product-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-basis: 18%;
   flex-grow: 1;
@@ -145,12 +153,14 @@ navbar 2 item
   height: 360px;
   margin-top: 15px;
   margin-right: 15px;
+  align-items: flex-end;
   /*margin-right: 5px;*/
 }
 #home .product4 {
   background-image: url("./images/product-4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-basis: 18%;
   flex-grow: 1;
@@ -159,12 +169,14 @@ navbar 2 item
   margin-right: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
+  align-items: flex-end;
   /*margin-right: 5px;*/
 }
 #home .product5 {
   background-image: url("./images/product-5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-basis: 18%;
   flex-grow: 1;
@@ -173,12 +185,14 @@ navbar 2 item
   margin-right: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
+  align-items: flex-end;
   /*margin-right: 5px;*/
 }
 #home .product6 {
   background-image: url("./images/product-6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-basis: 39%;
   flex-grow: 2;
@@ -187,12 +201,14 @@ navbar 2 item
   margin-right: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
+  align-items: flex-end;
   /*margin-right: 5px;*/
 }
 #home .product7 {
   background-image: url("./images/product-7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 230px;
   display: flex;
   flex-basis: 18%;
@@ -201,8 +217,10 @@ navbar 2 item
   margin-top: 15px;
   margin-right: 15px;
   margin-bottom: 15px;
+  align-items: flex-end;
   /*margin-right: 5px;*/
 }
+
 #home footer {
   height: 100px;
   color: #FFFFFF;
@@ -216,13 +234,7 @@ navbar 2 item
 /*---------------------Start of #about section-----------------*/
 
 #about main {
-  width: 850px;
-  background: #F2F1E8;
-  padding-top: 60px;
-  color: #131511;
-  font-family: 'Merriweather', serif;
-  padding-left: 200px;
-  padding-right: 200px;
+  width: 100%;
 }
 
 /*TODO:
@@ -231,8 +243,14 @@ navbar 2 item
 -margin right and margin bottom have gaps that need fixing*/
 
 
-#about .body {
-  /*width: 72%;*/
+#about .body1 {
+  width: 70%;
+  font-family: 'Merriweather', serif;
+  color: #131511;
+  background: #F2F1E8;
+  padding-top: 60px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 #about .title {
   text-align: center;
@@ -251,20 +269,29 @@ navbar 2 item
   padding-right: 30px;
   padding-bottom: 40px;
 }
+#about .p1 a {
+  color: #968772;
+}
+#about .p1 a:hover {
+  color: #967343;
+}
 
-/*TODO: inline link "dedicated environment" to the "Facilities" paragraph*/
+/*TODO: link goes to Facilities, but there is not padding so the title is cut off*/
 
 #about .p2 {
   font-style: italic;
   text-align: left;
   border-left: solid 2px;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0 auto;
 }
 #about .p3 h2 {
   font-size: 30px;
   font-weight: 200;
 }
+/*#about .midImageParent {
+  width: 100%;
+}*/
 #about .midimage {
   background-image: url(./images/background-3.jpg);
   background-repeat: no-repeat;
@@ -276,12 +303,25 @@ navbar 2 item
   align-items: center;
 }
 
-/*TODO: midimage does not stretch width of page*/
+/*TODO:
+-midimage is nested under the BODY parent and will be limited in widith
+-Need to group top 1/3 in a <div>
+-Image in its own <div>
+-Need to group bottom 1/3 in a <div>*/
 
 #about .midimage h1 {
   color: #FFFFFF;
   font-size: 45px;
   font-weight: 300;
+}
+#about .body2 {
+  width: 70%;
+  font-family: 'Merriweather', serif;
+  color: #131511;
+  background: #F2F1E8;
+  padding-top: 60px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 #about .ArticleAside {
   display: flex;
@@ -334,7 +374,7 @@ navbar 2 item
 #about footer {
   height: 100px;
   /*margin: 0;*/
-  /*width: 100%;*/
+  width: 100%;
   color: #FFFFFF;
   background-color: #303030;
   display: flex;
@@ -347,12 +387,15 @@ navbar 2 item
 
 /*-------------------Start of #newsletter section-------------*/
 
-#newsletter .signup {
+#newsletter {
   background-image: url("./images/background-2.jpg");
   height: 540px;
-  width: 1300px;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#newsletter .signup {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -362,19 +405,19 @@ navbar 2 item
 
 /*TODO:
 -Fonts and font colors are off
--textbox size is off
 -title headers are not right size
--entry lines do not have underline under names
--entry lines highlight "blue" when you click to type
+-background image does not cover entire background. Could be do to nesting inside of body
 */
 
 
 #newsletter .textbox {
   background-color: #FFFFFF;
-  height: 70%;
-  width: 47%;
+  /*height: 70%;
+  width: 47%;*/
   margin-top: 40px;
+  margin-bottom: 115px;
   display: flex;
+  flex-basis: 48%;
   flex-flow: row wrap;
   align-items: center;
 }
@@ -384,13 +427,13 @@ navbar 2 item
   justify-content: center;
 }
 #newsletter .titles h2 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 200;
   padding-left: 60px;
   padding-right: 60px;
 }
 #newsletter .titles h4 {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
   padding-left: 30px;
   padding-right: 30px;
@@ -398,42 +441,53 @@ navbar 2 item
 #newsletter .entry {
   padding: 30px;
 }
-#newsletter .names {
+/*#newsletter .entries {
   display: flex;
   flex-flow: row wrap;
-}
-#newsletter .firstname {
-  /*border: solid 1px;
+  font-family: 'Roboto', serif;
+  color: gray;
+  font-size: 18px;
+}*/
+#newsletter .name {
+  border: solid 2px;
   border-top: none;
   border-right: none;
   border-left: none;
-  height: 15px;
-  width: 50px;*/
-  /*border-bottom: 550px;*/
+  border-color: #968772;
+  height: 20px;
+  width: 550px;
+  margin-bottom: 25px;
+  padding-bottom: 3px;
 }
-#newsletter #first_name {
-  border: solid 1px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  height: 15px;
+#newsletter .name input {
+  font-family: 'Roboto', serif;
+  color: gray;
+  font-size: 18px;
+}
+/*#newsletter .name input:focus {
+  border-color: none;
+}*/
+#newsletter #name {
+  border-style: none;
   width: 500px;
 }
 #newsletter .email {
-  /*border: solid 1px;
+  border: solid 2px;
   border-top: none;
   border-right: none;
   border-left: none;
-  height: 15px;
-  width: 50px;*/
-  /*border-bottom: 550px;*/
+  border-color: #968772;
+  height: 20px;
+  width: 550px;
+  padding-bottom: 3px;
+}
+#newsletter .email input {
+  font-family: 'Roboto', serif;
+  color: gray;
+  font-size: 18px;
 }
 #newsletter #email {
-  border: solid 1px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  height: 15px;
+  border-style: none;
   width: 500px;
 }
 #newsletter .submit {
@@ -443,6 +497,7 @@ navbar 2 item
   padding-top: 20px;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 }
 #newsletter #submit_button {
   background-color: #968772;
