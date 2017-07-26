@@ -1,8 +1,4 @@
 /*TODO:
-navbar 2 item
-#home 2 items
-#about 8 items
-#newsletter 3 items
 *BONUS implementation
 */
 
@@ -38,7 +34,6 @@ navbar 2 item
 }
 .navli a:link {
   padding-right: 85px;
-  /*padding-left: 30px;*/
 	font-family: 'Roboto', serif;
 	font-size: 15px;
 	color: #2B2F26;
@@ -48,18 +43,10 @@ navbar 2 item
 	font-size: 15px;
 	color: #CD5D67;
 }
-.navli a:active {
-	font-family: 'Roboto', serif;
-	font-size: 15px;
-	color: #968772;
-}
-
-/*TODO:
--Still need to make "active" navbar highlight color: #968772; because it won't highlight correctly
--On #about and #newsletter the navbar slides left/right to stay center on the width of the page instead of being locked.*/
 
 
 /*-------------------Start of #home section-------------------*/
+
 
 #home main {
   width: 100%;
@@ -68,21 +55,22 @@ navbar 2 item
   color: #131511;
   font-family: 'Merriweather', serif;
 }
+#home .active {
+  color: #968772;
+}
 #home .title {
   text-align: center;
+  padding-top: 15px;
 }
 #home .title h1 {
   font-size: 50px;
   font-weight: 400;
-  /*padding-bottom: -60px;*/
 }
 #home .title h3 {
   font-size: 30px;
   font-weight: 200;
-  /*padding-bottom: 60px;*/
 }
 
-/*TODO: padding/spacing between the titles and other elements is off*/
 
 #home p {
   color: #FFFFFF;
@@ -93,9 +81,6 @@ navbar 2 item
 }
 
 #home .products {
-  /*margin: 10px 10px 10px 10px;
-  width: 95%;
-  height: 60%;*/
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -105,9 +90,6 @@ navbar 2 item
   /*justify-content: center;*/
 }
 
-/*TODO: images zoom when expanding and shrinking the page - need to make them uniform. Is this done by "containing" image?
-*/
-
 #home .product1 {
   background-image: url("./images/product-1.jpg");
   background-repeat: no-repeat;
@@ -115,16 +97,12 @@ navbar 2 item
   background-position: center;
   display: flex;
   flex-basis: 60%;
-  /*min-width: 60%;*/
   flex-grow: 3;
   flex-shrink: 3;
   height: 360px;
   margin-right: 15px;
   margin-top: 15px;
   align-items: flex-end;
-  /*margin-right: 5px;*/
-  /*height: 370px;
-  width: 730px;*/
 }
 #home .product2 {
   background-image: url("./images/product-2.jpg");
@@ -139,7 +117,6 @@ navbar 2 item
   margin-right: 15px;
   margin-top: 15px;
   align-items: flex-end;
-  /*margin-right: 5px;*/
 }
 #home .product3 {
   background-image: url("./images/product-3.jpg");
@@ -152,9 +129,7 @@ navbar 2 item
   flex-shrink: 1;
   height: 360px;
   margin-top: 15px;
-  margin-right: 15px;
   align-items: flex-end;
-  /*margin-right: 5px;*/
 }
 #home .product4 {
   background-image: url("./images/product-4.jpg");
@@ -170,7 +145,6 @@ navbar 2 item
   margin-top: 15px;
   margin-bottom: 15px;
   align-items: flex-end;
-  /*margin-right: 5px;*/
 }
 #home .product5 {
   background-image: url("./images/product-5.jpg");
@@ -186,7 +160,6 @@ navbar 2 item
   margin-top: 15px;
   margin-bottom: 15px;
   align-items: flex-end;
-  /*margin-right: 5px;*/
 }
 #home .product6 {
   background-image: url("./images/product-6.jpg");
@@ -202,7 +175,6 @@ navbar 2 item
   margin-top: 15px;
   margin-bottom: 15px;
   align-items: flex-end;
-  /*margin-right: 5px;*/
 }
 #home .product7 {
   background-image: url("./images/product-7.jpg");
@@ -215,10 +187,8 @@ navbar 2 item
   flex-grow: 1;
   flex-shrink: 1;
   margin-top: 15px;
-  margin-right: 15px;
   margin-bottom: 15px;
   align-items: flex-end;
-  /*margin-right: 5px;*/
 }
 
 #home footer {
@@ -231,16 +201,20 @@ navbar 2 item
   padding-left: 30px;
 }
 
+
+
 /*---------------------Start of #about section-----------------*/
 
-#about main {
-  width: 100%;
+
+
+#about .active {
+  color: #968772;
 }
 
-/*TODO:
--paragraph spacing
--page width is off
--margin right and margin bottom have gaps that need fixing*/
+#about main {
+  background-color: #F2F1E8;
+  width: 100%;
+}
 
 
 #about .body1 {
@@ -261,6 +235,7 @@ navbar 2 item
 }
 #about .p1 {
   padding-bottom: 30px;
+  font-size: 20px;
 }
 #about .p1 img {
   height: 120px;
@@ -276,38 +251,33 @@ navbar 2 item
   color: #967343;
 }
 
-/*TODO: link goes to Facilities, but there is not padding so the title is cut off*/
-
 #about .p2 {
   font-style: italic;
   text-align: left;
   border-left: solid 2px;
   font-size: 20px;
   margin: 0 auto;
+  margin-bottom: 45px;
 }
 #about .p3 h2 {
   font-size: 30px;
   font-weight: 200;
 }
-/*#about .midImageParent {
-  width: 100%;
-}*/
+#about .p3 p {
+  padding-bottom: 50px;
+  font-size: 20px;
+}
+
 #about .midimage {
   background-image: url(./images/background-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 310px;
+  height: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/*TODO:
--midimage is nested under the BODY parent and will be limited in widith
--Need to group top 1/3 in a <div>
--Image in its own <div>
--Need to group bottom 1/3 in a <div>*/
 
 #about .midimage h1 {
   color: #FFFFFF;
@@ -319,15 +289,16 @@ navbar 2 item
   font-family: 'Merriweather', serif;
   color: #131511;
   background: #F2F1E8;
-  padding-top: 60px;
   padding-left: 200px;
   padding-right: 200px;
+  padding-bottom: 50px;
 }
 #about .ArticleAside {
   display: flex;
 }
 #about .p4 {
   padding-right: 35px;
+  width: 78%;
 }
 #about .p4 h2{
   padding-top: 30px;
@@ -335,7 +306,7 @@ navbar 2 item
   font-weight: 200;
 }
 #about .p4 p {
-  font-size: 15px;
+  font-size: 20px;
 }
 #about .aside img {
   padding-top: 90px;
@@ -344,36 +315,38 @@ navbar 2 item
 }
 #about .aside p {
   padding-top: 20px;
-  font-size: 10px;
+  font-size: 12px;
+  width: 155px;
 }
 
-/*TODO: caption spacing is off with image*/
-
+#about .body2 h2 {
+  font-size: 30px;
+  font-weight: 200;
+}
 #about table {
   border-collapse: collapse;
   margin-bottom: 50px;
+  width: 81%;
 }
-
-/*TODO: table width/positioning should be aligned with paragraph above*/
 
 #about .lead {
   border: solid .5px;
   padding: 15px;
   margin: 0px;
-  font-size: 80%;
+  font-size: 16px;
   border-color: #131511;
 }
 #about .follow {
   border: solid .5px;
   border-color: #131511;
   padding: 15px;
+  font-size: 16px;
 }
 #about .color {
   background-color: #DFD5C6;
 }
 #about footer {
   height: 100px;
-  /*margin: 0;*/
   width: 100%;
   color: #FFFFFF;
   background-color: #303030;
@@ -383,13 +356,17 @@ navbar 2 item
   padding-left: 30px;
 }
 
-/*TODO: footer is not stretching width of entire page*/
+
 
 /*-------------------Start of #newsletter section-------------*/
 
+#newsletter .active {
+  color: #968772;
+}
+
 #newsletter {
   background-image: url("./images/background-2.jpg");
-  height: 540px;
+  height: 600px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -403,18 +380,11 @@ navbar 2 item
   margin-bottom: 115px;
 }
 
-/*TODO:
--Fonts and font colors are off
--title headers are not right size
--background image does not cover entire background. Could be do to nesting inside of body
-*/
-
-
 #newsletter .textbox {
   background-color: #FFFFFF;
   /*height: 70%;
   width: 47%;*/
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: 115px;
   display: flex;
   flex-basis: 48%;
@@ -422,32 +392,26 @@ navbar 2 item
   align-items: center;
 }
 #newsletter .titles {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
 }
 #newsletter .titles h2 {
   font-size: 25px;
   font-weight: 200;
   padding-left: 60px;
   padding-right: 60px;
+  padding-top: 50px;
 }
 #newsletter .titles h4 {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
   padding-left: 30px;
   padding-right: 30px;
 }
 #newsletter .entry {
-  padding: 30px;
+  padding: 5px 30px 30px 30px;
 }
-/*#newsletter .entries {
-  display: flex;
-  flex-flow: row wrap;
-  font-family: 'Roboto', serif;
-  color: gray;
-  font-size: 18px;
-}*/
+
 #newsletter .name {
   border: solid 2px;
   border-top: none;
@@ -464,12 +428,10 @@ navbar 2 item
   color: gray;
   font-size: 18px;
 }
-/*#newsletter .name input:focus {
-  border-color: none;
-}*/
 #newsletter #name {
   border-style: none;
-  width: 500px;
+  outline-color: none;
+  width: 550px;
 }
 #newsletter .email {
   border: solid 2px;
@@ -488,12 +450,10 @@ navbar 2 item
 }
 #newsletter #email {
   border-style: none;
-  width: 500px;
+  outline-color: none;
+  width: 550px;
 }
 #newsletter .submit {
-  /*padding-left: 240px;
-  padding-right: 240px;
-  /*padding-bottom: 20px;*/
   padding-top: 20px;
   display: flex;
   justify-content: center;
