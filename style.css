@@ -270,7 +270,7 @@
 }
 
 #about .midimage {
-  background-image: url(./images/background-3.jpg);
+  background-image: url('./images/background-3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
